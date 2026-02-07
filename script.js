@@ -12,7 +12,12 @@ const tontonGifs = [
 const title = document.querySelector(".title");
 const btnContainer = document.querySelector(".buttons");
 const yesBtn = document.querySelector(".btn-yes");
-const noBtn = document.querySelector(".btn-no");
+const noBtn = document.querySelector(".btn-no");;
+
+noBtn.addEventListener("click", () => {
+  noBtn.style.display = "none";
+});
+
 const img = document.querySelector(".img");
 
 const MAX_IMAGES = 5;
@@ -27,7 +32,7 @@ yesBtn.addEventListener("click", () => {
 
 
 noBtn.addEventListener("click", () => {
-  noBtn.style.display = "none";
+  if (!play) return;
 });
 
 
@@ -73,6 +78,7 @@ function changeImage(image) {
 function updateNoButtonText() {
   noBtn.innerHTML = generateMessage(noCount);
 }
+
 
 
 
