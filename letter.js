@@ -6,7 +6,8 @@ I’m really happy I get to talk to you.
 I really hope that someday we'll be together forever.
 I'm really glad that you have become a person in my life.
 I hope that no matter what happens we'll be able to get through
-it all I love you so much. Thank you for everything
+it all, I love you so much. Thank you for everything you have done.
+You're the best Girlfriend in the world and nothing would change that.
 
 Happy Valentine’s 💗
 — Leo`;
@@ -28,3 +29,4 @@ typeLetter();
 openFlowers.addEventListener("click", () => {
   window.location.href = "flower.html";
 });
+
