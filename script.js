@@ -22,7 +22,7 @@ let noButtonSize = 1;
 let yesButtonSize = 1;
 
 yesBtn.addEventListener("click", () => {
-  window.location.href = "flower.html"; // must match the file name exactly
+  window.location.href = "letter.html";
 });
 
 
@@ -51,12 +51,12 @@ function shrinkNoButton() {
 
 function generateMessage(count) {
   const messages = [
-    "No 😔",
-    "Are you sure? 🥺",
-    "Pookie please 🥹",
-    "Don't do this to me 😭",
-    "You're breaking my heart 💔",
-    "I'm gonna cry... 😭💔",
+    "No ",
+    "Are you sure?",
+    "Bebi please",
+    "Don't do this to me",
+    "You're breaking my heart",
+    "I'm gonna cry...",
   ];
   return messages[Math.min(count, messages.length - 1)];
 }
@@ -71,4 +71,5 @@ function changeImage(image) {
 function updateNoButtonText() {
   noBtn.innerHTML = generateMessage(noCount);
 }
+
 
