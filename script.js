@@ -1,4 +1,4 @@
-"use strict";
+\"use strict";
 
 const tontonGifs = [
   "https://media.tenor.com/TUVAE2M_wz4AAAAi/chubby-tonton.gif",
@@ -27,7 +27,9 @@ yesBtn.addEventListener("click", () => {
 
 
 noBtn.addEventListener("click", () => {
-  if (!play) return;
+  noBtn.style.display = "none";
+});
+
 
   noCount++;
   const imageIndex = Math.min(noCount, MAX_IMAGES);
@@ -71,5 +73,6 @@ function changeImage(image) {
 function updateNoButtonText() {
   noBtn.innerHTML = generateMessage(noCount);
 }
+
 
 
